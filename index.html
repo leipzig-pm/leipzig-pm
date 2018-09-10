@@ -1,7 +1,125 @@
 <html>
+<head>
+    <title>Leipzig.pm</title>
+
+    <meta http-equiv="Content-Language" content="de,en">
+    <meta charset="UTF-8">
+
+<style>
+body {
+    background-image: linear-gradient( to right, DarkBlue, blue );
+    max-width: 600pt;
+    margin-left:  auto;
+    margin-right: auto;
+    font-family: sans-serif;
+}
+
+body > * {
+    padding: 5pt;
+}
+
+header h1 {
+    margin-bottom: 0;
+}
+
+header, nav {
+    color: white;
+}
+
+main {
+    background-color: white;
+    border-radius: 5pt;
+}
+
+header a,
+nav    a {
+    color: inherit;
+}
+
+header a {
+    text-decoration: inherit;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li + li::before {
+    content: ' · ';
+}
+
+.past h2 {
+    text-decoration: line-through;
+}
+
+code {
+    background-color: LightGrey;
+    border-radius: 3pt;
+    padding:       3pt;
+}
+</style>
+</head>
+
 <body>
 
-<h1>Hello $World</h1>
+<header>
+    <h1><a href=".">Leipzig.pm</a></h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="https://www.perl.org/">Perl</a> <a href="https://www.pm.org/">Mongers</a> in Leipzig</li>
+        <li><a href="https://mail.pm.org/mailman/listinfo/leipzig-pm">Mailing List</a></li>
+    </ul>
+</nav>
+
+<main>
+<h2>27.-30.12.2018: Assembly auf dem 35c3</h2>
+
+<p>Auf dem 35th Chaos Communication Congress in Leipzig wollen wir
+eine Assembly öffnen und Perl-Leute vernetzen.</p>
+
+<h2>28.9.2018: Vortrag über DBIx-Class</h2>
+
+<p>Weil auf dem German Perl Workshop in Gummersbach der Wunsch aufkam,
+haben wir am 28.9. ein Treffen mit einem längeren Vortrag über DBIx-Class,
+dem populärsten Datenbank-Framework in Perl5. Inhalte:</p>
+
+<ul>
+    <li>Was ist DBIx-Class (DBIC) oder allgemein ein Datenbank-ORM?</li>
+    <li>Von DBI.pm mit SQL-Strings zu DBIC</li>
+    <li>Vorteile und Stärken von DBIC ausreizen</li>
+    <li>Migrationen: Live-Datenbanken nach Schema-Änderungen in der Software aktuell halten</li>
+</ul>
+
+<h2>12.9.2018: Stammtisch</h2>
+
+<div class="past">
+<h2>22.6.2018: Stammtisch</h2>
+
+<h2>18.5.2018: Stammtisch</h2>
+
+<h2>23.4.2018: Stammtisch</h2>
+
+<h2>7.2.2018: Stammtisch</h2>
+
+<h2>10.1.2018: Stammtisch</h2>
+
+<h2>27.-30.12.2017: 34th Chaos Communication Congress</h2>
+
+<p>Ein Leipziger und mehrere Auswärtige haben sich auf dem 34c3 getroffen
+und beschlossen im Dezember 2018 beim 35c3 eine Perl Assembly zu starten.</p>
+</div>
+</main>
+
+<footer>
+<p><code>__END__</code></p>
+</footer>
 
 </body>
 </html>
